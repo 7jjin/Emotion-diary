@@ -37,8 +37,8 @@ const reducer = (state, action) => {
   return newState;
 };
 
-export const DiartStateContext = React.createContext();
-export const DiartDispatchContext = React.createContext();
+export const DiaryStateContext = React.createContext();
+export const DiaryDispatchContext = React.createContext();
 
 const dummyData = [
   {
@@ -109,8 +109,8 @@ function App() {
   };
 
   return (
-    <DiartStateContext.Provider value={data}>
-      <DiartDispatchContext.Provider
+    <DiaryStateContext.Provider value={data}>
+      <DiaryDispatchContext.Provider
         value={{ onCreate, onEdit, onpointermove }}
       >
         <BrowserRouter>
@@ -123,8 +123,8 @@ function App() {
             </Routes>
           </div>
         </BrowserRouter>
-      </DiartDispatchContext.Provider>
-    </DiartStateContext.Provider>
+      </DiaryDispatchContext.Provider>
+    </DiaryStateContext.Provider>
   );
 }
 
