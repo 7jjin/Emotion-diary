@@ -3,7 +3,7 @@ import { useState, useRef, useContext, useEffect } from "react";
 import MyHeader from "./../components/MyHeader";
 import MyButton from "./../components/MyButton";
 import EmotionItem from "./EmotionItem";
-import { DiaryDispatchContext, DiaryStateContext } from "./../App";
+import { DiaryDispatchContext, DiaryStateContext } from "../App";
 import { emotionList } from "../util/emotion";
 
 // 시간 형식 변경
