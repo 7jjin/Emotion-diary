@@ -8,6 +8,7 @@ import Edit from "./pages/Edit";
 import Diary from "./pages/Diary";
 import New from "./pages/New";
 
+// 싱태 관리 로직
 const reducer = (state, action) => {
   let newState = [];
   switch (action.type) {
